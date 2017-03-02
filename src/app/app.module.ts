@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NumberInputComponent } from './number-input/number-input.component';
 import { InputComponent } from './input/input.component';
+import { DrawInputComponent } from './draw-input/draw-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NumberInputComponent,
-    InputComponent
+    InputComponent,
+    DrawInputComponent
   ],
   imports: [
     BrowserModule,

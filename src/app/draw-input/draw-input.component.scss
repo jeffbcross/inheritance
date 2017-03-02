@@ -1,0 +1,20 @@
+.drawing-canvas {
+  background:url(victor.png) no-repeat;
+  &-pixel {
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    float: left;
+    &-filled {
+      background: #c00;
+    }
+  }
+}
+
+button {
+  font-size: 24px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #eee;
+}

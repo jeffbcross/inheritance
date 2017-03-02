@@ -1,0 +1,15 @@
+<div
+  class="drawing-canvas"
+  (mousedown)="startDrawing()"
+  (mousemove)="fillPixel($event)"
+  [style.width]="(numPixelsAcross * 12)+'px'"
+  [style.height]="(numPixelsAcross * 12)+'px'">
+  <div *ngFor="let pixel of value"
+    class="drawing-canvas-pixel"
+    [ngClass]="{'drawing-canvas-pixel-filled': pixel.filled}">
+
+  </div>
+</div>
+
+<button (click)="clear()">Clear</button>
+<button class="submit-button" [disabled]="!(valid | async)">Submit</button>
