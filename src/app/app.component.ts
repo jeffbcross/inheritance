@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  inputsChanged(val) {
+    console.log('app: input changed', val);
+  }
 }

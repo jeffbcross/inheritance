@@ -15,12 +15,16 @@ export class NumberInputComponent extends BaseInput<number> {
     this.value = this.value - 1;
   }
 
+  updateValue(evt: Event) {
+    this.value = this.transformInput((evt.target as HTMLInputElement).value);
+  }
+
   transformInput(val: string | number): number {
     if (typeof val === 'number') {
       return val;
     }
     else if (typeof val === 'string') {
-      this.transformedInput = parseFloat(val);
+      return parseFloat(val);
     } else {
       throw new Error('unknown input for number');
     }
