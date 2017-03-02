@@ -7,6 +7,7 @@ export class BaseInput<T> {
   @HostBinding('style.padding') padding = '10px';
   @HostBinding('style.display') display = 'inline-block';
   @HostBinding('style.borderRadius') borderRadius = '5px';
+  @HostBinding('style.background') background = '#4fc3e3';
 
   @Output() change: Subject<T> = new Subject();
 

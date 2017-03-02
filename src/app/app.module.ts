@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NumberInputComponent } from './number-input/number-input.component';
 import { InputComponent } from './input/input.component';
 import { DrawInputComponent } from './draw-input/draw-input.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NumberInputComponent,
     InputComponent,
-    DrawInputComponent
+    DrawInputComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
