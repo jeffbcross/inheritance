@@ -28,7 +28,5 @@ export class NumberInputComponent extends BaseInput<number> {
     } else {
       throw new Error('unknown input for number');
     }
-
   }
-
 }
