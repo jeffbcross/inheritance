@@ -8,11 +8,7 @@ import { BaseInput } from '../base-input';
   styleUrls: ['./checkbox.component.css']
 })
 export class CheckboxComponent extends BaseInput<boolean> implements OnInit {
-
-  // constructor() { }
-
   ngOnInit() {
     this.value = this.value ? true : false;
   }
-
 }
